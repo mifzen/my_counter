@@ -1,5 +1,20 @@
-<button id="button">Click me</button>
-<p id="counter">0</p>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>a netlify function test</title>
+  <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
+<body>
+  <div data-netlify-identity-menu></div>
+
+  <!-- Add a simpler button:
+    Simple button that will open the modal.
+  -->
+  <div data-netlify-identity-button>Login with Netlify Identity</div>
+
+  <button id="button">Click me</button>
+  <p id="counter">0</p>
+</body>
 
 <script>
   const button = document.getElementById('button');
@@ -16,3 +31,4 @@
       });
   });
 </script>
+</html>
