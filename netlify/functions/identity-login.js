@@ -10,7 +10,9 @@ exports.handler = async function (event, context) {
   console.log("\nevent\n");
   console.log(event);
   console.log("\nuser\n");
-  console.log(event.body.user.user_metadata.full_name);
+
+  let parsed = JSON.parse(event.body);
+  console.log(parsed.user.user_metadata.full_name);
 
   return {
     statusCode: 200,
